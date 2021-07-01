@@ -1,5 +1,7 @@
 var express = require('express');
 var path = require('path');
+var config = require('./config.js')
+
 
 var app = express();
 
@@ -9,7 +11,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const PORT = 8080;
+const PORT = config.PORT;
 
 var router = express.Router();
 
