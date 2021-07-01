@@ -2,7 +2,6 @@ var express = require('express');
 var path = require('path');
 var config = require('./config.js')
 
-
 var app = express();
 
 // view engine setup
